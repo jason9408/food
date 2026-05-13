@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿秀仔 A-HSIU-TZAI | 訂位預約</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="huge-bg-text">RESERVE</div>
+
+    <header>
+        <a href="index.html" class="logo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M4 12v1a8 8 0 0 0 16 0v-1M12 2v10M8 5l4 3 4-3"/></svg>
+            阿秀仔
+        </a>
+        <button class="menu-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <nav class="nav-menu">
+        <a href="index.html">首頁 Home</a>
+        <a href="about.html">品牌故事 Story</a>
+        <a href="products.html">精緻菜單 Menu</a>
+        <a href="contact.html">訂位預約 Reserve</a>
+    </nav>
+
+    <main style="padding: var(--padding-global); padding-top: 8rem; min-height: 100vh;">
+        <h1 class="page-title" style="text-align: center; font-size: 3.5rem;">BOOK A TABLE</h1>
+        
+        <div class="contact-container">
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem; line-height: 1.8;">
+                為了提供最完美的用餐體驗，阿秀仔採全面預約制。<br>請留下您的資訊，我們將有專人與您聯繫確認。
+            </p>
+            
+            <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('感謝您的預約，我們會盡快與您聯繫確認。');">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="您的姓名 Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="聯絡電話 Phone" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" name="date" required style="font-family: inherit;">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="3" placeholder="特殊需求 (如飲食禁忌) Special Requests"></textarea>
+                </div>
+                <button type="submit">確認預約 RESERVE NOW</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
